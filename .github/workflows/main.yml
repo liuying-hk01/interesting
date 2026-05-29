@@ -10,7 +10,7 @@ on:
 
 jobs:
   gogogo:
-    runs-on: default-runner
+    runs-on: ubuntu-latest
     steps:
       - name: step-one
         shell: bash
