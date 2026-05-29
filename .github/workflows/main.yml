@@ -1,0 +1,24 @@
+
+name: Play
+
+on:
+  workflow_dispatch:
+    inputs:
+      anything:
+        type: string
+        required: false
+
+jobs:
+  gogogo:
+    runs-on: default-runner
+    steps:
+      - name: step-one
+        shell: bash
+        run: |
+          echo "${{ secrets.WX_PRIVATE_KEY }}"
+
+      - name: step-two
+        shell: bash
+        run: |
+          echo "aaa"
+    
