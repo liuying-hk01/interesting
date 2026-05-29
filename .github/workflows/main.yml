@@ -15,7 +15,7 @@ jobs:
       - name: step-one
         shell: bash
         run: |
-          echo "${{ secrets.WX_PRIVATE_KEY }}"
+          pwd
 
       - name: step-two
         shell: bash
