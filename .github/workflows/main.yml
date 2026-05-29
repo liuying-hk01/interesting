@@ -15,7 +15,7 @@ jobs:
       - name: step-one
         shell: bash
         run: |
-          pwd
+          echo "${{github.ref}}"
 
       - name: step-two
         shell: bash
