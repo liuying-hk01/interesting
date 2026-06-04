@@ -1,0 +1,13 @@
+# services:
+#   server:
+#     build:
+#       context: .
+#     environment:
+# NODE_ENV: production
+
+services:
+  test:
+    image: com-image3
+    # command: ["node", "./server.js"]
+    # build:
+    #   context: .
