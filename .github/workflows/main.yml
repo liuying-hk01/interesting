@@ -20,5 +20,5 @@ jobs:
       - name: step-two
         shell: bash
         run: |
-          echo "aaa"
+          echo "${{vars.ENV}}"
     
