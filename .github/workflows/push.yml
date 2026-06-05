@@ -1,8 +1,9 @@
-name: Push
+name: Test play
 
 on:
-  branches:
-    - main
+  push:
+    branches:
+      - main
 
 jobs:
   Go:
