@@ -1,0 +1,15 @@
+name: Test play
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step-one
+        shell: bash
+        run: |
+          echo "${{secrets.RELEASE_PLEASE_ACTION_TOKEN}}"
