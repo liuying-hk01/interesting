@@ -1,4 +1,3 @@
-
 name: Play
 
 on:
@@ -20,5 +19,4 @@ jobs:
       - name: step-two
         shell: bash
         run: |
-          echo "${{vars.ENV}}"
-    
+          sh ./test.sh
