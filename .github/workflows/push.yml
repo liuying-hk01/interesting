@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - development
+      - main
 
 jobs:
   Go:
     runs-on: ubuntu-latest
-    environment: development
+    environment: ${{ github.base_ref === "main" && 'production' || 'development' }}
     env:
       ENV: development1
     steps:
