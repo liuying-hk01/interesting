@@ -10,6 +10,9 @@ on:
 jobs:
   gogogo:
     runs-on: ubuntu-latest
+    environment: development
+    env:
+      ENV: development1
     steps:
       - name: step-one
         shell: bash
@@ -19,4 +22,5 @@ jobs:
       - name: step-two
         shell: bash
         run: |
-          sh ./test.sh
+          echo "${{env.ENV}}"
+          echo "${{vars}}"
