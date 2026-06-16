@@ -3,7 +3,7 @@ name: Test play
 on:
   push:
     branches:
-      - main
+      - development
 
 jobs:
   Go:
@@ -13,3 +13,9 @@ jobs:
         shell: bash
         run: |
           echo "${{secrets.RELEASE_PLEASE_ACTION_TOKEN}}"
+      - name: step-two
+        shell: bash
+        run: |
+          echo "${{env.ENV}}"
+          echo "${{vars}}"
+          echo "${{github}}"
