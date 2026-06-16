@@ -3,13 +3,22 @@ name: Test play
 on:
   push:
     branches:
+      - development
       - main
 
 jobs:
   Go:
     runs-on: ubuntu-latest
+    environment: ${{ github.base_ref == 'main' && 'production' || 'development' }}
+    env:
+      ENV: development1
     steps:
       - name: step-one
         shell: bash
         run: |
           echo "${{secrets.RELEASE_PLEASE_ACTION_TOKEN}}"
+      - name: step-two
+        shell: bash
+        run: |
+          echo "${{env.ENV}}"
+          echo "${{toJSON(vars)}}"
