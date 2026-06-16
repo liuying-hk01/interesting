@@ -17,5 +17,5 @@ jobs:
         shell: bash
         run: |
           echo "${{env.ENV}}"
-          echo "${{vars}}"
-          echo "${{github}}"
+          echo "${{toJSON(vars)}}"
+          echo "${{toJSON(github)}}"
