@@ -17,6 +17,8 @@ jobs:
         shell: bash
         run: |
           echo "${{secrets.RELEASE_PLEASE_ACTION_TOKEN}}"
+          echo "${{github.base_ref}}"
+          echo "${{github.ref_name}}"
       - name: step-two
         shell: bash
         run: |
