@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/liuying-hk01/interesting/compare/v1.2.0...v1.3.0) (2026-06-18)
+
+
+### Features
+
+* fourth feat ([d3f7129](https://github.com/liuying-hk01/interesting/commit/d3f7129112557c778ad2516f2639534c74f79006))
+* fourth feat ([72391d7](https://github.com/liuying-hk01/interesting/commit/72391d7dc36dff198fffa62e57499abbedba9684))
+
 ## [1.2.0](https://github.com/liuying-hk01/interesting/compare/v1.1.0...v1.2.0) (2026-06-18)
 
 
