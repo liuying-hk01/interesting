@@ -30,3 +30,8 @@ jobs:
       #   run: |
       #     echo "${{env.ENV}}"
       #     echo "${{toJSON(vars)}}"
+      - name: step-three
+        shell: bash
+        run: |
+          echo "${{steps.release.outputs.release_created}}"
+          echo "${{steps.release.outputs.prs_created}}"
