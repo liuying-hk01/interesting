@@ -20,22 +20,20 @@ jobs:
       - name: step-one
         shell: bash
         run: |
-          echo "${{secrets.RELEASE_PLEASE_ACTION_TOKEN}}"
-          echo "${{github.base_ref}}"
-          echo "${{github.ref_name}}"
-      - uses: googleapis/release-please-action@v4
-        id: release
-        # if: ${{ vars.ENV == 'production' }} # only master branch bumps
-        with:
-          token: ${{ secrets.RELEASE_PLEASE_ACTION_TOKEN }}
-          target-branch: ${{ github.ref_name }}
+          ls -al
+      # - uses: googleapis/release-please-action@v4
+      #   id: release
+      #   # if: ${{ vars.ENV == 'production' }} # only master branch bumps
+      #   with:
+      #     token: ${{ secrets.RELEASE_PLEASE_ACTION_TOKEN }}
+      #     target-branch: ${{ github.ref_name }}
       # - name: step-two
       #   shell: bash
       #   run: |
       #     echo "${{env.ENV}}"
       #     echo "${{toJSON(vars)}}"
-      - name: step-three
-        shell: bash
-        run: |
-          echo "${{steps.release.outputs.release_created}}"
-          echo "${{steps.release.outputs.prs_created}}"
+      # - name: step-three
+      #   shell: bash
+      #   run: |
+      #     echo "${{steps.release.outputs.release_created}}"
+      #     echo "${{steps.release.outputs.prs_created}}"
