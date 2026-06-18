@@ -21,7 +21,7 @@ jobs:
           echo "${{github.ref_name}}"
       - uses: googleapis/release-please-action@v4
         id: release
-        if: ${{ vars.ENV == 'production' }} # only master branch bumps
+        # if: ${{ vars.ENV == 'production' }} # only master branch bumps
         with:
           token: ${{ secrets.RELEASE_PLEASE_ACTION_TOKEN }}
           target-branch: ${{ github.ref_name }}
