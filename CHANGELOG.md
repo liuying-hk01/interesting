@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/liuying-hk01/interesting/compare/v1.1.0...v1.2.0) (2026-06-18)
+
+
+### Features
+
+* three feat ([0e6d933](https://github.com/liuying-hk01/interesting/commit/0e6d933e7db2eebd7f9adeccf7b61afbce664e58))
+
 ## [1.1.0](https://github.com/liuying-hk01/interesting/compare/v1.0.0...v1.1.0) (2026-06-18)
 
 
